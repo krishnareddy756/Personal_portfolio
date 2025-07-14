@@ -1,0 +1,76 @@
+/* Contact Section */
+#contact {
+  position: relative;
+  padding-bottom: var(--space-xl);
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: var(--space-xl);
+  background: rgba(30, 30, 30, 0.7);
+  border-radius: 12px;
+}
+
+.form-group {
+  margin-bottom: var(--space-md);
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: var(--space-xs);
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.form-input {
+  width: 100%;
+  padding: var(--space-sm);
+  background: var(--bg-dark-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-size: var(--text-base);
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+  box-shadow: var(--accent-glow);
+}
+
+.form-input::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: var(--space-sm);
+  background: var(--accent-primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: var(--text-lg);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: var(--accent-secondary);
+  transform: translateY(-2px);
+  box-shadow: var(--secondary-glow);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-form {
+    padding: var(--space-lg) var(--space-md);
+  }
+  
+  .submit-btn {
+    padding: var(--space-sm) var(--space-md);
+  }
+}
